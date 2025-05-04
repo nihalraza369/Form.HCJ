@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Clinical Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #ffffff, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #000000, #000000);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+body::before {
+  content: "Dr. Masroor FCPS OMFS";
+    position: absolute;
+    top: 16%;
+    left: 53%;
+    transform: translate(-51%, -38%);
+    font-size: 9rem;
+    color: rgb(0 0 0 / 10%);
+    font-weight: bold;
+    pointer-events: none;
+    z-index: -1;
+    user-select: none;
+    letter-spacing: 47px;
+    opacity: 10.3;
+    text-align: center;
+}
+
+    .form-container {
+        margin: 2px 2px 2px -435px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(1px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 2rem 3rem;
+      width: 151%;
+      max-width: 978px;
+      color: #ffffff;
+      animation: fadeInUp 1s ease;
+    }
+
+    .form-container{
+        margin: 2px 2px 2px -435px;
+    border-radius: 20px;
+    box-shadow: 34 51px -8px 0 rgba(31, 38, 135, 0.2);
+    /* backdrop-filter: blur(186px); */
+  
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem 3rem;
+    width: 151%;
+    max-width: 978px;
+    color: #ffffff;
+    animation: fadeInUp 1s ease;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+        font-family: none;
+    text-align: center;
+    font-size: 5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    }
+    h3 {
+        font-size: 2.2rem;
+    margin: 2rem 0 1rem;
+    color: #007e7e;
+    border-left: 5px solid #00b4d8;
+    padding-left: 1rem;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 1rem 0.75rem;
+      border: none;
+      border-bottom: 2px solid #ffffff;
+      background: transparent;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      color: #ffffff;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .form-group label {
+      position: absolute;
+      top: 1rem;
+      left: 0.75rem;
+      color: #ffffff;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      pointer-events: none;
+    }
+    .form-group input:focus,
+    .form-group input:not(:placeholder-shown),
+    .form-group textarea:focus,
+    .form-group textarea:not(:placeholder-shown) {
+      border-color:  #ffffff;
+      outline: none;
+    }
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label {
+      top: -0.75rem;
+      font-size: 0.75rem;
+      color: #ffffff;
+      background: #c2e9fb;
+      padding: 0 0.3rem;
+      border-radius: 4px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .row .form-group {
+      flex: 1;
+      min-width: 240px;
+    }
+    .signature {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: transparent;
+    }
+    input[type="date"] {
+      color: #000000;
+    }
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2px 237px 49px -409px;
+    }
+
+    .image-container img {
+    margin: -1600px 320px 35px;
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="WhatsApp Image 2025-05-04 at 12.01.36_77d0d09a.png" alt="Client Image" />
+      </div>
+  <div class="form-container">
+    <h2>Comprehensive Clinical Proforma</h2>
+    <div class="row">
+      <div class="form-group">
+        <input type="date" name="date" placeholder=" " />
+        <label>Date</label>
+      </div>
+    </div>
+    <h3>BIO DATA</h3>
+    <div class="row">
+      <div class="form-group">
+        <input type="text" name="name" placeholder=" " />
+        <label>Name</label>
+      </div>
+      <div class="form-group">
+        <input type="number" name="age" placeholder=" " />
+        <label>Age</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="sex" placeholder=" " />
+        <label>Sex</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <input type="text" name="address" placeholder=" " />
+        <label>Address</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="occupation" placeholder=" " />
+        <label>Occupation</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="chief_complaint" placeholder=" " />
+      <label>Chief Complaint</label>
+    </div>
+    <div class="form-group">
+      <textarea name="history_present_illness" placeholder=" "></textarea>
+      <label>History of the Present Illness</label>
+    </div>
+    <div class="form-group">
+      <textarea name="past_medical_history" placeholder=" "></textarea>
+      <label>Past Medical History</label>
+    </div>
+    <div class="form-group">
+      <input type="text" name="medications" placeholder=" " />
+      <label>Medications</label>
+    </div>
+    <div class="form-group">
+      <input type="text" name="allergies" placeholder=" " />
+      <label>Allergies (including reaction)</label>
+    </div>
+    <div class="form-group">
+      <textarea name="review_of_systems" placeholder=" "></textarea>
+      <label>Review of Systems</label>
+    </div>
+    <div class="form-group">
+      <textarea name="social_history" placeholder=" "></textarea>
+      <label>Social History</label>
+    </div>
+    <div class="form-group">
+      <textarea name="family_history" placeholder=" "></textarea>
+      <label>Family History</label>
+    </div>
+    <div class="form-group">
+      <textarea name="general_exam" placeholder=" "></textarea>
+      <label>General Physical Examination</label>
+    </div>
+    <h3>VITAL SIGNS</h3>
+    <div class="row">
+      <div class="form-group">
+        <input type="text" name="bp" placeholder=" " />
+        <label>BP</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="pulse" placeholder=" " />
+        <label>Pulse</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="resp_rate" placeholder=" " />
+        <label>Respiratory Rate</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="temperature" placeholder=" " />
+        <label>Temperature</label>
+      </div>
+    </div>
+    <h3>EXTRAORAL EXAMINATION</h3>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Inspection</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Palpation</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Percussion</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Auscultation</label></div>
+    <h3>INTRAORAL EXAMINATION</h3>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Inspection</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Palpation</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Percussion</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Investigations</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Radiological Evaluation</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Treatment Plan</label></div>
+    <div class="form-group"><textarea placeholder=" "></textarea><label>Follow Up</label></div>
+    <div class="signature">
+      <div class="form-group">
+        <input type="text" name="signature" placeholder=" " style="width: 40%;" />
+        <label>Doctor’s Signature</label>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
