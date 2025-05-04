@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprehensive Clinical Proforma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right top, #d0eefd, #f7fbff);
+      padding: 2rem;
+      color: #1c1c2c;
+    }
+    .form-container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 3rem;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      animation: fadeSlideIn 1s ease;
+    }
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #005f73;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: #00b4d8;
+      border-radius: 2px;
+    }
+    h3 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      color: #023047;
+      background: #e0f7ff;
+      padding: 0.5rem 1rem;
+      border-left: 5px solid #0077b6;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      position: relative;
+    }
+    input[type="text"], input[type="number"], input[type="date"], textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: #f9fcfe;
+      transition: all 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #00b4d8;
+      box-shadow: 0 0 8px rgba(0, 180, 216, 0.25);
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .row .form-group {
+      flex: 1;
+      min-width: 250px;
+    }
+    .signature {
+      margin-top: 1rem;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+    input:hover, textarea:hover {
+      border-bottom: 2px solid #00b4d8;
+    }
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Comprehensive Clinical Proforma</h2>
+    <div class="row">
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date" name="date">
+      </div>
+    </div>
+    <h3>BIO DATA</h3>
+    <div class="row">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name">
+      </div>
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" name="age">
+      </div>
+      <div class="form-group">
+        <label>Sex</label>
+        <input type="text" name="sex">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Address</label>
+        <input type="text" name="address">
+      </div>
+      <div class="form-group">
+        <label>Occupation</label>
+        <input type="text" name="occupation">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Chief Complaint</label>
+      <input type="text" name="chief_complaint">
+    </div>
+    <div class="form-group">
+      <label>History of the Present Illness</label>
+      <textarea name="history_present_illness"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Past Medical History</label>
+      <textarea name="past_medical_history"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Medications</label>
+      <input type="text" name="medications">
+    </div>
+    <div class="form-group">
+      <label>Allergies (including reaction)</label>
+      <input type="text" name="allergies">
+    </div>
+    <div class="form-group">
+      <label>Review of Systems</label>
+      <textarea name="review_of_systems"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Social History</label>
+      <textarea name="social_history"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Family History</label>
+      <textarea name="family_history"></textarea>
+    </div>
+    <div class="form-group">
+      <label>General Physical Examination</label>
+      <textarea name="general_exam"></textarea>
+    </div>
+    <h3>VITAL SIGNS</h3>
+    <div class="row">
+      <div class="form-group">
+        <label>BP</label>
+        <input type="text" name="bp">
+      </div>
+      <div class="form-group">
+        <label>Pulse</label>
+        <input type="text" name="pulse">
+      </div>
+      <div class="form-group">
+        <label>Respiratory Rate</label>
+        <input type="text" name="resp_rate">
+      </div>
+      <div class="form-group">
+        <label>Temperature</label>
+        <input type="text" name="temperature">
+      </div>
+    </div>
+    <h3>EXTRAORAL EXAMINATION</h3>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+    <div class="form-group"><label>Auscultation</label><textarea></textarea></div>
+    <h3>INTRAORAL EXAMINATION</h3>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+    <div class="form-group"><label>Investigations</label><textarea></textarea></div>
+    <div class="form-group"><label>Radiological Evaluation</label><textarea></textarea></div>
+    <div class="form-group"><label>Treatment Plan</label><textarea></textarea></div>
+    <div class="form-group"><label>Follow Up</label><textarea></textarea></div>
+    <div class="signature">
+      <label>Doctor’s Signature</label>
+      <input type="text" name="signature" style="width: 40%;">
+    </div>
+  </div>
+</body>
+</html>
