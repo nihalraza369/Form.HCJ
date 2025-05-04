@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprehensive Clinical Proforma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f2f9ff, #e6f7ff);
+      padding: 2rem;
+      color: #1e1e2f;
+    }
+    .form-container {
+      max-width: 960px;
+      margin: auto;
+      background: #ffffffcc;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      animation: bounceIn 0.9s ease-out;
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #0077b6;
+    }
+    h3 {
+      margin-top: 2rem;
+      color: #023e8a;
+      font-size: 1.3rem;
+      border-left: 5px solid #0096c7;
+      padding-left: 10px;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #1e1e2f;
+    }
+    input[type="text"], input[type="number"], textarea {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      background: #f8fcff;
+      transition: all 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #00b4d8;
+      box-shadow: 0 0 5px rgba(0, 180, 216, 0.3);
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .row .form-group {
+      flex: 1;
+      min-width: 240px;
+    }
+    .signature {
+      margin-top: 2rem;
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Comprehensive Clinical Proforma</h2>
+    <div class="row">
+      <div class="form-group">
+        <label>Date</label>
+        <input type="text" name="date">
+      </div>
+    </div>
+    <h3>BIO DATA</h3>
+    <div class="row">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name">
+      </div>
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" name="age">
+      </div>
+      <div class="form-group">
+        <label>Sex</label>
+        <input type="text" name="sex">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Address</label>
+        <input type="text" name="address">
+      </div>
+      <div class="form-group">
+        <label>Occupation</label>
+        <input type="text" name="occupation">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Chief Complaint</label>
+      <input type="text" name="chief_complaint">
+    </div>
+    <div class="form-group">
+      <label>History of the Present Illness</label>
+      <textarea name="history_present_illness"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Past Medical History</label>
+      <textarea name="past_medical_history"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Medications</label>
+      <input type="text" name="medications">
+    </div>
+    <div class="form-group">
+      <label>Allergies (including reaction)</label>
+      <input type="text" name="allergies">
+    </div>
+    <div class="form-group">
+      <label>Review of Systems</label>
+      <textarea name="review_of_systems"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Social History</label>
+      <textarea name="social_history"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Family History</label>
+      <textarea name="family_history"></textarea>
+    </div>
+    <div class="form-group">
+      <label>General Physical Examination</label>
+      <textarea name="general_exam"></textarea>
+    </div>
+    <h3>VITAL SIGNS</h3>
+    <div class="row">
+      <div class="form-group">
+        <label>BP</label>
+        <input type="text" name="bp">
+      </div>
+      <div class="form-group">
+        <label>Pulse</label>
+        <input type="text" name="pulse">
+      </div>
+      <div class="form-group">
+        <label>Respiratory Rate</label>
+        <input type="text" name="resp_rate">
+      </div>
+      <div class="form-group">
+        <label>Temperature</label>
+        <input type="text" name="temperature">
+      </div>
+    </div>
+    <h3>EXTRAORAL EXAMINATION</h3>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+    <div class="form-group"><label>Auscultation</label><textarea></textarea></div>
+    <h3>INTRAORAL EXAMINATION</h3>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+    <div class="form-group"><label>Investigations</label><textarea></textarea></div>
+    <div class="form-group"><label>Radiological Evaluation</label><textarea></textarea></div>
+    <div class="form-group"><label>Treatment Plan</label><textarea></textarea></div>
+    <div class="form-group"><label>Follow Up</label><textarea></textarea></div>
+    <div class="signature">
+      <label>Doctor’s Signature</label>
+      <input type="text" name="signature">
+    </div>
+  </div>
+</body>
+</html>
