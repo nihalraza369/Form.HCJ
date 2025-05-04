@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clinical Proforma Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 80px;
+    }
+    .row {
+      display: flex;
+      gap: 20px;
+    }
+    .row .form-group {
+      flex: 1;
+    }
+    hr {
+      margin: 25px 0;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>COMPREHENSIVE CLINICAL PROFORMA</h2>
+    
+    <div class="form-group" style="text-align: right;">
+      <label>Date:</label>
+      <input type="date" />
+    </div>
+
+    <h3>BIO DATA</h3>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Age:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Sex:</label>
+        <input type="text" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Address:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Occupation:</label>
+        <input type="text" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Chief Complaint</label>
+      <input type="text" />
+    </div>
+
+    <div class="form-group">
+      <label>History of the Present Illness</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Past Medical History</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Medications</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Allergies (including reaction)</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Review of Systems</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Social History</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Family History</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>General Physical Examination</label>
+      <textarea></textarea>
+    </div>
+
+    <h3>VITAL SIGNS</h3>
+    <div class="row">
+      <div class="form-group"><label>BP:</label><input type="text" /></div>
+      <div class="form-group"><label>Pulse:</label><input type="text" /></div>
+      <div class="form-group"><label>Respiratory Rate:</label><input type="text" /></div>
+      <div class="form-group"><label>Temperature:</label><input type="text" /></div>
+    </div>
+
+    <h3>EXTRAORAL EXAMINATION</h3>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+    <div class="form-group"><label>Auscultation</label><textarea></textarea></div>
+
+    <h3>INTRAORAL EXAMINATION</h3>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+
+    <div class="form-group"><label>INVESTIGATIONS</label><textarea></textarea></div>
+    <div class="form-group"><label>RADIOLOGICAL EVALUATION</label><textarea></textarea></div>
+    <div class="form-group"><label>TREATMENT PLAN</label><textarea></textarea></div>
+    <div class="form-group"><label>FOLLOW UP</label><textarea></textarea></div>
+
+    <div class="form-group">
+      <label>Doctor’s Signature</label>
+      <input type="text" />
+    </div>
+
+  </form>
+</body>
+</html>
