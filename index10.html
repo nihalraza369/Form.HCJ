@@ -22,7 +22,7 @@
     }
     body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #006677, #00405f);
+  background: linear-gradient(to right, #ffffff, #ffffff);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -49,28 +49,29 @@ body::before {
 }
 
     .form-container {
-      
+        margin: 2px 2px 2px -435px;
       border-radius: 20px;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(1px);
       border: 1px solid rgba(255, 255, 255, 0.18);
       padding: 2rem 3rem;
-      width: 100%;
-      max-width: 900px;
+      width: 151%;
+      max-width: 978px;
       color: #1c1c1c;
       animation: fadeInUp 1s ease;
     }
 
     .form-container{
+        margin: 2px 2px 2px -435px;
     border-radius: 20px;
     box-shadow: 34 51px -8px 0 rgba(31, 38, 135, 0.2);
     /* backdrop-filter: blur(186px); */
   
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 2rem 3rem;
-    width: 82%;
-    max-width: 875px;
+    width: 151%;
+    max-width: 978px;
     color: #1c1c1c;
     animation: fadeInUp 1s ease;
     }
@@ -85,18 +86,18 @@ body::before {
       }
     }
     h2 {
-    font-family: monospace;
+        font-family: none;
     text-align: center;
-    font-size: 2rem;
-    color: #ffffff;
+    font-size: 5rem;
+    color: #000000;
     margin-bottom: 2rem;
     }
     h3 {
-      font-size: 1.2rem;
-      margin: 2rem 0 1rem;
-      color: #b2d7d7;;
-      border-left: 5px solid #00b4d8;
-      padding-left: 1rem;
+        font-size: 2.2rem;
+    margin: 2rem 0 1rem;
+    color: #007e7e;
+    border-left: 5px solid #00b4d8;
+    padding-left: 1rem;
     }
     .form-group {
       position: relative;
@@ -121,7 +122,7 @@ body::before {
       position: absolute;
       top: 1rem;
       left: 0.75rem;
-      color: #fff8f8;
+      color: #000000;
       font-size: 1rem;
       transition: all 0.2s ease;
       pointer-events: none;
@@ -139,7 +140,7 @@ body::before {
     .form-group textarea:not(:placeholder-shown) + label {
       top: -0.75rem;
       font-size: 0.75rem;
-      color: #0077b6;
+      color: #000000;
       background: #c2e9fb;
       padding: 0 0.3rem;
       border-radius: 4px;
@@ -162,17 +163,36 @@ body::before {
       color: transparent;
     }
     input[type="date"] {
-      color: #ffffff;
+      color: #000000;
     }
     @media (max-width: 600px) {
       .row {
         flex-direction: column;
       }
     }
+
+    .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2px 237px 49px -409px;
+    }
+
+    .image-container img {
+    margin: -1600px 320px 35px;
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
   </style>
   
 </head>
 <body>
+
+    <div class="image-container">
+        <img src="WhatsApp Image 2025-05-04 at 12.01.36_77d0d09a.png" alt="Client Image" />
+      </div>
   <div class="form-container">
     <h2>Comprehensive Clinical Proforma</h2>
     <div class="row">
