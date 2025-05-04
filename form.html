@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Proforma</title>
+  <style>
+    body {
+        background-color: rgb(255, 255, 255);
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 900px;
+    }
+
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+    label {
+      font-weight: bold;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 6px;
+      margin: 5px 0 15px;
+      box-sizing: border-box;
+    }
+    .flex {
+      display: flex;
+      gap: 20px;
+    }
+    .flex > div {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h2>COMPREHENSIVE CLINICAL PROFORMA</h2>
+
+  <form>
+    <!-- BIO DATA -->
+    <div class="section">
+      <label>Date:</label>
+      <input type="date" name="date">
+
+      <div class="flex">
+        <div>
+          <label>Name:</label>
+          <input type="text" name="name">
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" name="age">
+        </div>
+        <div>
+          <label>Sex:</label>
+          <input type="text" name="sex">
+        </div>
+      </div>
+
+      <div class="flex">
+        <div>
+          <label>Address:</label>
+          <input type="text" name="address">
+        </div>
+        <div>
+          <label>Occupation:</label>
+          <input type="text" name="occupation">
+        </div>
+      </div>
+    </div>
+
+    <!-- Sections -->
+    <div class="section">
+      <label>Chief Complaint</label>
+      <textarea name="chief_complaint" rows="2"></textarea>
+
+      <label>History of the Present Illness</label>
+      <textarea name="present_illness" rows="3"></textarea>
+
+      <label>Past Medical History</label>
+      <textarea name="past_medical_history" rows="2"></textarea>
+
+      <label>Medications</label>
+      <textarea name="medications" rows="2"></textarea>
+
+      <label>Allergies (including reaction)</label>
+      <textarea name="allergies" rows="2"></textarea>
+
+      <label>Review of Systems</label>
+      <textarea name="review_of_systems" rows="2"></textarea>
+
+      <label>Social History</label>
+      <textarea name="social_history" rows="2"></textarea>
+
+      <label>Family History</label>
+      <textarea name="family_history" rows="2"></textarea>
+
+      <label>General Physical Examination</label>
+      <textarea name="general_physical" rows="2"></textarea>
+    </div>
+
+    <!-- VITAL SIGNS -->
+    <div class="section">
+      <label>VITAL SIGNS:</label>
+      <div class="flex">
+        <div><label>BP:</label><input type="text" name="bp"></div>
+        <div><label>Pulse:</label><input type="text" name="pulse"></div>
+        <div><label>Respiratory Rate:</label><input type="text" name="resp_rate"></div>
+        <div><label>Temperature:</label><input type="text" name="temp"></div>
+      </div>
+    </div>
+
+    <!-- EXAMINATIONS -->
+    <div class="section">
+      <label><strong>EXTRAORAL EXAMINATION</strong></label>
+      <label>Inspection</label>
+      <textarea name="extra_inspection" rows="1"></textarea>
+      <label>Palpation</label>
+      <textarea name="extra_palpation" rows="1"></textarea>
+      <label>Percussion</label>
+      <textarea name="extra_percussion" rows="1"></textarea>
+      <label>Ausculation</label>
+      <textarea name="extra_ausculation" rows="1"></textarea>
+
+      <label><strong>INTRAORAL EXAMINATION</strong></label>
+      <label>Inspection</label>
+      <textarea name="intra_inspection" rows="1"></textarea>
+      <label>Palpation</label>
+      <textarea name="intra_palpation" rows="1"></textarea>
+      <label>Percussion</label>
+      <textarea name="intra_percussion" rows="1"></textarea>
+    </div>
+
+    <!-- Others -->
+    <div class="section">
+      <label>INVESTIGATIONS</label>
+      <textarea name="investigations" rows="2"></textarea>
+
+      <label>RADIOLOGICAL EVALUATION</label>
+      <textarea name="radiology" rows="2"></textarea>
+
+      <label>TREATMENT PLAN</label>
+      <textarea name="treatment_plan" rows="2"></textarea>
+
+      <label>FOLLOW UP</label>
+      <textarea name="follow_up" rows="2"></textarea>
+
+      <label>Doctor’s Signature</label>
+      <input type="text" name="signature">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
