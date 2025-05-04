@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clinical Proforma - Modern Design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      font-family: 'Segoe UI', sans-serif;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      color: #004d40;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #26a69a;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .row .form-group {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+    }
+
+    .signature input {
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>COMPREHENSIVE CLINICAL PROFORMA</h2>
+
+    <div class="form-group" style="text-align:right">
+      <label>Date:</label>
+      <input type="date">
+    </div>
+
+    <div class="section-title">BIO DATA</div>
+    <div class="row">
+      <div class="form-group"><label>Name:</label><input type="text"></div>
+      <div class="form-group"><label>Age:</label><input type="text"></div>
+      <div class="form-group"><label>Sex:</label><input type="text"></div>
+    </div>
+    <div class="row">
+      <div class="form-group"><label>Address:</label><input type="text"></div>
+      <div class="form-group"><label>Occupation:</label><input type="text"></div>
+    </div>
+
+    <div class="form-group"><label>Chief Complaint</label><input type="text"></div>
+    <div class="form-group"><label>History of the Present Illness</label><textarea></textarea></div>
+    <div class="form-group"><label>Past Medical History</label><textarea></textarea></div>
+    <div class="form-group"><label>Medications</label><textarea></textarea></div>
+    <div class="form-group"><label>Allergies (including reaction)</label><textarea></textarea></div>
+    <div class="form-group"><label>Review of Systems</label><textarea></textarea></div>
+    <div class="form-group"><label>Social History</label><textarea></textarea></div>
+    <div class="form-group"><label>Family History</label><textarea></textarea></div>
+    <div class="form-group"><label>General Physical Examination</label><textarea></textarea></div>
+
+    <div class="section-title">VITAL SIGNS</div>
+    <div class="row">
+      <div class="form-group"><label>BP:</label><input type="text"></div>
+      <div class="form-group"><label>Pulse:</label><input type="text"></div>
+      <div class="form-group"><label>Respiratory Rate:</label><input type="text"></div>
+      <div class="form-group"><label>Temperature:</label><input type="text"></div>
+    </div>
+
+    <div class="section-title">EXTRAORAL EXAMINATION</div>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+    <div class="form-group"><label>Auscultation</label><textarea></textarea></div>
+
+    <div class="section-title">INTRAORAL EXAMINATION</div>
+    <div class="form-group"><label>Inspection</label><textarea></textarea></div>
+    <div class="form-group"><label>Palpation</label><textarea></textarea></div>
+    <div class="form-group"><label>Percussion</label><textarea></textarea></div>
+
+    <div class="section-title">INVESTIGATIONS & TREATMENT</div>
+    <div class="form-group"><label>INVESTIGATIONS</label><textarea></textarea></div>
+    <div class="form-group"><label>RADIOLOGICAL EVALUATION</label><textarea></textarea></div>
+    <div class="form-group"><label>TREATMENT PLAN</label><textarea></textarea></div>
+    <div class="form-group"><label>FOLLOW UP</label><textarea></textarea></div>
+
+    <div class="signature">
+      <label>Doctor's Signature</label>
+      <input type="text">
+    </div>
+  </div>
+</body>
+</html>
